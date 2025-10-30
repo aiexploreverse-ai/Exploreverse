@@ -1,0 +1,57 @@
+# CodeRabbit Configuration for Exploreverse
+
+# Language settings
+language: en-US
+
+# Review settings
+reviews:
+  # Enable auto-review of pull requests
+  auto_review:
+    enabled: true
+
+  # Request changes vs comment mode
+  request_changes_workflow: false
+
+  # High level summary
+  high_level_summary: true
+
+  # Poem (fun summary in poem form)
+  poem: true
+
+  # Review levels
+  profile: chill # Options: chill, assertive
+
+  # Path-based instructions
+  path_instructions:
+    - path: "website/**/*.tsx"
+      instructions: |
+        - Ensure React components follow best practices
+        - Check for proper TypeScript typing
+        - Verify accessibility standards (ARIA labels, semantic HTML)
+        - Check for performance optimizations (memo, useMemo, useCallback where appropriate)
+
+    - path: "website/**/*.ts"
+      instructions: |
+        - Ensure proper TypeScript typing (avoid 'any' unless necessary)
+        - Check for error handling
+        - Verify code follows DRY principles
+
+    - path: "**/*.css"
+      instructions: |
+        - Check for Tailwind CSS usage consistency
+        - Verify responsive design patterns
+        - Look for unused or duplicate styles
+
+# Chat settings
+chat:
+  auto_reply: true
+
+# Tools and integrations
+early_access: false
+
+# Tone and style
+tone_instructions: |
+  - Be constructive and friendly
+  - Focus on teaching and explaining why changes are suggested
+  - Prioritize security, performance, and maintainability issues
+  - Be concise but thorough
