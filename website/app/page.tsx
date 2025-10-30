@@ -28,6 +28,16 @@ export default function Home() {
                 Learn More
               </button>
             </div>
+
+            {/* Big Red Button - EXP-36 */}
+            <div className="mt-8 flex justify-center">
+              <button
+                className="bg-red-600 text-white px-16 py-6 rounded-xl font-bold text-2xl hover:bg-red-700 hover:shadow-2xl hover:scale-110 transition-all duration-300 shadow-lg"
+                aria-label="Big red action button"
+              >
+                BIG RED BUTTON
+              </button>
+            </div>
           </div>
         </div>
         <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-white to-transparent"></div>
