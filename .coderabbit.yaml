@@ -49,6 +49,10 @@ chat:
 # Tools and integrations
 early_access: false
 
+# Linear integration
+linear:
+  team_key: EXP
+
 # Tone and style
 tone_instructions: |
   - Be constructive and friendly
